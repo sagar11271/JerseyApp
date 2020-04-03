@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ragas</groupId>
+	<artifactId>JerseyApp</artifactId>
+	<packaging>war</packaging>
+	<version>1.0</version>
+	<name>JerseyApp Maven Webapp</name>
+	
+	<dependencies>
+
+			<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+<!-- 			<scope>test</scope> -->
+		</dependency>
+		
+		<dependency> 
+        <groupId>com.fasterxml.jackson.core</groupId> 
+        <artifactId>jackson-databind</artifactId> 
+        <version>2.5.3</version> 
+</dependency>
+
+		
+		<!-- ////////////////////////// jersey all dependency v 1.9 ///////////////////////////////// -->
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-servlet -->
+<dependency>
+    <groupId>com.sun.jersey</groupId>
+    <artifactId>jersey-servlet</artifactId>
+    <version>1.18</version>
+</dependency>
+		
+
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-bundle -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-bundle</artifactId>
+			<version>1.9</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-server -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>1.9</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-core -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-core</artifactId>
+			<version>1.9</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>1.9</version>
+		</dependency>
+
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+		<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+		<!-- do not use javax.ws.rs while using com.sun.jersey they both have same class to do the work -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>javax.ws.rs</groupId> -->
+<!-- 			<artifactId>javax.ws.rs-api</artifactId> -->
+<!-- 			<version>2.0</version> -->
+<!-- 		</dependency> -->
+
+
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+             <configuration>
+                <compilerVersion>1.8</compilerVersion>
+                <source>1.8</source>
+                <target>1.8</target>
+             </configuration>
+       </plugin>
+		</plugins>
+		<finalName>JerseyApp</finalName>
+	</build>
+	
+</project>
